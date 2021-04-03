@@ -24,7 +24,7 @@ public class checkYear {
             }
             System.out.println(str);
 
-            System.out.println("dừng lại nhấn 0, nhấn phím bất kỳ để tiếp tục");
+            System.out.println("dừng lại nhấn 0, nhấn số bất kỳ để tiếp tục");
             int num;
             num = sc.nextInt();
             if (num == 0) {
