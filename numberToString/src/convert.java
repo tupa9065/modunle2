@@ -8,7 +8,6 @@ public class convert {
         double num = sc.nextDouble();
         double[] arr = {0, 0, 0};
         double temp = 100d;
-        double num1 = (num - num % temp) / temp;
         for (int i = 0; i < 3; i++) {
             arr[i] = (num - num % temp) / temp;
             num -= arr[i] * temp;
