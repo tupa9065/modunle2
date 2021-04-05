@@ -14,6 +14,6 @@ public class fizzBuzz {
         }else if (num%3==0){
             System.out.println("FIZZ");
         }
-        
+
     }
 }
