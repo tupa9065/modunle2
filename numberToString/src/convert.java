@@ -155,8 +155,6 @@ public class convert {
         } else {
             str = "out of ability";
         }
-
         System.out.println(str);
-
     }
 }
