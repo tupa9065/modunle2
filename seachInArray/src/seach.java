@@ -20,5 +20,7 @@ public class seach {
         }else {
             System.out.println("not find your name in student");
         }
+
+
     }
 }
