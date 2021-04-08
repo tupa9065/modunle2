@@ -1,3 +1,5 @@
+package abc;
+
 import java.util.Scanner;
 
 public class bt0604 {
