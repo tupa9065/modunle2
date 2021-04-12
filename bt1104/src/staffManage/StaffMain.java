@@ -11,6 +11,7 @@ public class StaffMain {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        StaffManager staffManager =new StaffManager();
         Staff[] staffs = new Staff[5];
         staffs[0] = new FullTime(1, "aa", 20, "123245", "@gmail", 0, 0, 3000000);
         lastID++;
@@ -46,7 +47,7 @@ public class StaffMain {
             choice = scanner.nextInt();
             switch (choice) {
                 case 1: {
-                    StaffManager.display(staffs);
+                    staffManager.display(staffs);
                     break;
                 }
                 case 2: {
@@ -57,7 +58,7 @@ public class StaffMain {
                         staffs[i]=s;
                          i++;
                     }
-                    staffs[staffs.length-1]=StaffManager.addFullTime();
+                    staffs[staffs.length-1]=staffManager.addFullTime();
                     break;
                 }
                 case 3: {
@@ -68,15 +69,15 @@ public class StaffMain {
                         staffs[i]=s;
                         i++;
                     }
-                    staffs[staffs.length-1]=StaffManager.addPartTime();
+                    staffs[staffs.length-1]=staffManager.addPartTime();
                     break;
                 }
                 case 4: {
-                    StaffManager.getLowIncome(staffs);
+                    staffManager.getLowIncome(staffs);
                     break;
                 }
                 case 5:{
-                    int total = StaffManager.getTotalSalaryPT(staffs);
+                    int total = staffManager.getTotalSalaryPT(staffs);
                     System.out.println("total salary part time in company: "+total);
                     break;
                 }
