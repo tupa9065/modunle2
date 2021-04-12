@@ -45,6 +45,7 @@ public class StaffManager {
         bonus=scanner.nextInt();
         System.out.println("Fines :");
         fines=scanner.nextInt();
+        scanner.nextLine();
         Staff staff = new FullTime(id, name, age, phoneNumber, mail, bonus, fines, salary);
         return staff;
         
@@ -54,6 +55,7 @@ public class StaffManager {
         PartTime.totalSPT++;
         System.out.println("Working time :");
         workTime=scanner.nextInt();
+        scanner.nextLine();
         Staff staff = new PartTime(id, name, age, phoneNumber, mail, workTime);
         return staff;
     }
