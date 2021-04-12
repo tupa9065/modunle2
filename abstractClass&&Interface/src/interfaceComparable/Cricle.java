@@ -1,6 +1,6 @@
 package interfaceComparable;
 
-public class Cricle extends Shape{
+public class Cricle extends Shape implements Resizeable{
     private double radius = 1;
     public Cricle(){
     }
@@ -30,5 +30,11 @@ public class Cricle extends Shape{
     @Override
     public String toString() {
         return "A Circle with radius="+radius+", which is a subclass of "+super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        double newRadius = this.getRadius()+ this.getRadius()*percent/100;
+        this.setRadius(newRadius);
     }
 }

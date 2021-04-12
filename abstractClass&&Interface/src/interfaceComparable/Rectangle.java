@@ -1,6 +1,6 @@
 package interfaceComparable;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape implements Resizeable{
     private double width=1;
     private double height=1;
 
@@ -40,5 +40,13 @@ public class Rectangle extends Shape{
     @Override
     public String toString(){
         return "A Rectangle with width="+width+" and length="+height+", which is a subclass of "+super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        double newHeight = getHeight()+getHeight()*percent/100;
+        setHeight(newHeight);
+        double newWidth = getWidth()+getWidth()*percent/100;
+        setWidth(newWidth);
     }
 }

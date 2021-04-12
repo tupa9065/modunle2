@@ -1,6 +1,6 @@
 package interfaceComparable;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle implements Resizeable{
     public Square() {}
     public Square(double side) {
         super(side,side);
@@ -13,17 +13,17 @@ public class Square extends Rectangle{
     }
 
     public void setSide(double side) {
-        setWidth(side);
-        setHeight(side);
+        super.setWidth(side);
+        super.setHeight(side);
     }
     @Override
-    public void setWidth(double side) {
-        setSide(side);
+    public void setWidth(double width) {
+        setSide(width);
     }
 
     @Override
-    public void setHeight(double side) {
-        setSide(side);
+    public void setHeight(double height) {
+        setSide(height);
     }
 
     @Override
@@ -32,5 +32,10 @@ public class Square extends Rectangle{
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+    public void resize(double percent) {
+        double newSize = this.getSide()+this.getSide()*percent/100;
+        this.setSide(newSize);
+
     }
 }
