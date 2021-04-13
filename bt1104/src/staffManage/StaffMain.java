@@ -14,6 +14,7 @@ public class StaffMain {
         StaffManager staffManager =new StaffManager();
         Staff[] staffs = new Staff[5];
         staffs[0] = new FullTime(1, "aa", 20, "123245", "@gmail", 0, 0, 3000000);
+
         lastID++;
         Staff.totalStaff++;
         FullTime.totalSFT++;
