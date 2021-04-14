@@ -39,4 +39,18 @@ class FizzBuzzTest {
         String actual= new FizzBuzz().fizzBuzz(number);
         assertEquals(expected,actual);
     }
+    @Test
+    void Insert19OutIncorrect(){
+        byte number =19;
+        String expected= "Incorrect";
+        String actual= new FizzBuzz().fizzBuzz(number);
+        assertEquals(expected,actual);
+    }
+    @Test
+    void Insert15OutFizzBuzz(){
+        byte number =15;
+        String expected= "FizzBuzz";
+        String actual= new FizzBuzz().fizzBuzz(number);
+        assertEquals(expected,actual);
+    }
 }
