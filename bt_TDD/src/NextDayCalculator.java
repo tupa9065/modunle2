@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class NextDayCalculator {
+import java.util.Date;
+
+public class NextDayCalculator {
+    public int nextDay(int number){
+        return 0;
+    }
 }

@@ -51,7 +51,7 @@ public class HotelManager {
         int check=-1;
         for (Hotel hotel:hotels) {
             if (hotel.getRenter().getSoCMT().equals(cmt)){
-                int hotelPrice=hotel.getPrice();
+                int hotelPrice=hotel.getRoomCharge();
                 System.out.println("Tien phong "+hotel.getKindOfRoom()+" trong "+hotel.getDateOfHire() +" ngay la :'"+hotelPrice+"' usd");
                 System.out.println("===========================================================================");
                 check=1;
