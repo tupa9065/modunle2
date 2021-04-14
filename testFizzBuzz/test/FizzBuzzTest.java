@@ -18,4 +18,11 @@ class FizzBuzzTest {
         String actual= new FizzBuzz().fizzBuzz(number);
         assertEquals(expected,actual);
     }
+    @Test
+    void Insert5OutBuzz(){
+        byte number =5;
+        String expected="Buzz";
+        String actual= new FizzBuzz().fizzBuzz(number);
+        assertEquals(expected,actual);
+    }
 }
