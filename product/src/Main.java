@@ -46,7 +46,7 @@ public class Main {
                     System.exit(0);
                     break;
                 default:
-                    System.out.println(" choice not found ");
+                    System.out.println(" choice found ");
                     break;
             }
         }while (choice!=0);
