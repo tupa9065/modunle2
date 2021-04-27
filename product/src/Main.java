@@ -42,6 +42,12 @@ public class Main {
                     String path = "product.txt";
                     manager.writeToFile(path);
                     break;}
+                case 0:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println(" choice not found ");
+                    break;
             }
         }while (choice!=0);
 
