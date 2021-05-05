@@ -38,7 +38,9 @@ public class TapChi extends TaiLieu{
     @Override
     public String toString() {
         return "TapChi{" +
-                super.toString()+
+                "id=" + super.getId() +
+                ", nameNXB='" + super.getNameNXB() + '\'' +
+                ", soBanPhatHanh=" + super.getSoBanPhatHanh() +
                 "soPhatHanh=" + soPhatHanh +
                 ", thangPhatHanh=" + thangPhatHanh +
                 '}';

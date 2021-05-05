@@ -12,7 +12,6 @@ public class Main {
             if(matcher.find()){
                 System.out.println(emails[i]);
             }
-
         }
     }
 }

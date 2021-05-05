@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class Change {
+import java.util.Stack;
+
+public class Change {
+    public static void main(String[] args) {
+
+    }
 }

@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class LibManage {
     HashMap<String,LibCard> libCardsArr = new HashMap();
-    static int latsId=0;
+
     public void insertLibCard(){
         LibCard libCard = new LibCard();
         libCard.insertLibCard();

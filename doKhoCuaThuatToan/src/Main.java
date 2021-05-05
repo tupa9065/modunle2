@@ -31,7 +31,7 @@ public class Main {
                 max.clear();
                 max.addAll(list);
             }
-            list.clear();
+
         }
 
         // Hiển thị chuỗi tăng dần dài nhất

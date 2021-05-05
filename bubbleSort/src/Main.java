@@ -7,7 +7,7 @@ public class Main {
 
         for (int k = 1; k < list.length && needNextPass; k++) {
             /* Array may be sorted and next pass not needed */
-            needNextPass = false;
+                needNextPass = false;
             for (int i = 0; i < list.length - k; i++) {
                 if (list[i] > list[i + 1]) {
                     /* Swap list[i] with list[i + 1] */

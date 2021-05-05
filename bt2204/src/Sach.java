@@ -38,7 +38,9 @@ public class Sach extends TaiLieu{
     @Override
     public String toString() {
         return "Sach{" +
-                super.toString()+
+                "id=" + super.getId() +
+                ", nameNXB='" + super.getNameNXB() + '\'' +
+                ", soBanPhatHanh=" + super.getSoBanPhatHanh() +
                 "tenTacGia='" + tenTacGia + '\'' +
                 ", soTrang=" + soTrang +
                 '}';

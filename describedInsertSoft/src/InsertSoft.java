@@ -10,8 +10,6 @@ public class InsertSoft {
                 list[position] = list[position-1];
                 position--;
                 display(list);
-
-
             }
             list[position]=x;
             display(list);
